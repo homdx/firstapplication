@@ -10,6 +10,10 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.label import Label
 from kivy.metrics import dp
 from datetime import datetime
+
+#for debug - show version of python
+from sys import version_info
+
 import os
 import ast
 import time
@@ -70,6 +74,8 @@ class AddFood(Screen):
         self.app.config.write()
 
         text = "Last Added activity:  " + self.txt1.text
+#For debug - show version of python with info about fast compile in docker
+        text = text + '%s\n' % str(version_info) + '%s\n Fast compile'
         self.result.text = text
         self.txt1.text = ''
 

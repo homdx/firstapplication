@@ -1,0 +1,24 @@
+--- buildozer.spec	2018-11-10 00:07:40.488862682 +0300
++++ buildozer.my	2018-11-10 00:11:55.740427055 +0300
+@@ -5,7 +5,7 @@
+ source.dir = .
+ source.include_exts = py,png,jpg,kv,atlas,ttf,json
+ version = 0.1
+-requirements = kivy==master,python3crystax==3.5
++requirements = kivy,python3crystax==3.6
+ orientation = all
+ osx.python_version = 3
+ osx.kivy_version = 1.9.1
+@@ -16,9 +16,9 @@
+ android.minapi = 13
+-android.sdk = 23
++#android.sdk = 23
+ #private = False
+-android.ndk_path = /home/kivy/Android/crystax-ndk-10.3.2/
++android.ndk_path = /home/user/.buildozer/crystax-ndk-10.3.2
+ android.arch = armeabi-v7a
+-p4a.source_dir = /home/kivy/Repos/python-for-android/
++#p4a.source_dir = /home/kivy/Repos/python-for-android/
+ [buildozer]
+ log_level = 2
+ warn_on_root = 1
